@@ -1,5 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nanum+Myeongjo&family=Quantico&family=Roboto&display=swap');
 
+ #page-container {
+    display: flex;
+    width: 100%;
+}
+
+.page-content {
+    flex: 1;
+}
+
+#left {
+    font-family: 'Dancing Script';
+    max-width: 70%;
+}
+
 #bg-img {
-    max-width: 40rem;
+    object-fit: cover;
+    max-width: 40rem; /*Change that at some point*/
+}
+
+#img-txt {
+    color: purple;
+    text-align: center;
+}
+
+#right {
+    flex: 4 0 0%;
+    margin-left: 5rem;
+}
+
+input {
+    margin: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+}
+
+button {
+    max-width: fit-content;
+    padding: 0.5rem;
 }

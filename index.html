@@ -12,38 +12,48 @@
 
 <body>
     <h1>SignUp Form</h1>
-    <div>
-        <img src="./assets/bg-img.jpg" id="bg-img" />
-        <div>
-            <img src="" id="logo">
-            <h3>No Limit</h3>
+    <div id="page-container">
+        <div class="page-content" id="left">
+            <img src="./assets/bg-img.jpg" id="bg-img" />
+            <div id="img-txt">
+                <img src="" id="logo">
+                <h3>No Limit</h3>
+            </div>
+            <p>Photo by <a href="https://unsplash.com/@grakozy">Greg Rakozy</a> on <a
+                    href="https://unsplash.com/">Unsplash</a></p>
         </div>
-        <p>Photo by <a href="https://unsplash.com/@grakozy">Greg Rakozy</a> on <a
-                href="https://unsplash.com/">Unsplash</a></p>
-    </div>
-    <div>
-        <p>
-            This is not a real online service!
-            You know you need something like this in your life to help you realize your deepest dreams.
-            Sign up <em>now</em> to get started.
-        </p>
-        <p>You <em>know</em> you want to.</p>
-        <form>
-            <h3>Let's do this!</h3>
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name"/>
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name"/>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email"/>
-            <label for="phone">Phone Number</label>
-            <input type="number" name="phone" id="phone"/>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password"/>
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="confirm-password" id="confirm-password"/>
-            <button type="submit">Create Account</button>
-        </form>
+        <div class="page-content" id="right">
+            <p>
+                This is not a real online service!
+                You know you need something like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+            <!---Add method="post"-->
+            <form>
+                <h3>Let's do this!</h3>
+                <fieldset>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" />
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" />
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="phone" id="phone" />
+                </fieldset>
+                <fieldset>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirmed-password" id="confirm-password" />
+                </fieldset>
+                <button type="submit" id="submit-button">Create Account</button>
+            </form>
+            <p>Already have an account? <a>Log in</a></p>
+        </div>
     </div>
     <footer>The Odin Project &#169 Haelina 2023</footer>
 </body>
